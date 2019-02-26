@@ -1,0 +1,22 @@
+#include <gtest/gtest.h>
+#include <vector>
+
+using namespace std;
+
+TEST(vectorTest, size){
+  vector<int> seq = {1, 2, 3, 4, 5};
+  int expectedSize = 5;
+  int actualSize = seq.size();
+  EXPECT_EQ(expectedSize, actualSize);
+}
+
+TEST(vectorTest, empty){
+  vector<int> seq;
+  ASSERT_TRUE(seq.empty());
+}
+
+TEST(vectorTest, clear){
+  vector<int> seq = {1, 2, 3, 4, 5};
+  seq.clear();
+  ASSERT_TRUE(0, seq.size());
+}
