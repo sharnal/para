@@ -1,2 +1,2 @@
 # para
-Programming related projects, areas, resources and archives
+Projects, Areas, Resources and Archives
